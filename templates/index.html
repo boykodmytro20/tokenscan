@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TokenScan | by boykodmytro20</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 TokenScan</h1>
+        <p>Enter a token contract address to analyze key metrics.</p>
+
+        <form method="POST">
+            <input type="text" name="contract" placeholder="Token Contract Address" required>
+            <button type="submit">Scan Token</button>
+        </form>
+
+        {% if token_data %}
+            <div class="results">
+                <h2>📈 Token Info</h2>
+                <h3>Total Supply:</h3>
+                <pre>{{ token_data.supply.result }}</pre>
+
+                <h3>Top Holders (First 10):</h3>
+                <pre>{{ token_data.holders.result }}</pre>
+
+                <h3>Contract Source Code:</h3>
+                <pre>{{ token_data.source.result[0].SourceCode | truncate(500) }}</pre>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>
