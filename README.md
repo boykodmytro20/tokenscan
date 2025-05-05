@@ -2,6 +2,8 @@
 
 TokenScan is a Web3 tool for analyzing token metrics, including token supply, holders, and smart contract source code. It leverages the **Etherscan API** to fetch data about Ethereum-based tokens.
 
+---
+
 📁 Project Structure
 
 tokenscan/
@@ -15,11 +17,15 @@ tokenscan/
  - README.md
  - .gitignore
 
+---
+
 ## 💡 Features
 
 - Analyze token supply and volume
 - View top holders (first 10)
 - View the contract source code for any ERC-20 token
+
+---
 
 ## 🛠 Tech Stack
 
@@ -27,6 +33,8 @@ tokenscan/
 - **Etherscan API**
 - **Web3.js** (for potential frontend integration)
 - **Solidity** (for smart contracts, optional)
+
+---
 
 ## 🏁 Getting Started
 
@@ -64,8 +72,12 @@ ETHERSCAN_API_KEY=your_etherscan_api_key_here
 python app.py
 ```
 
+---
+
 Visit http://127.0.0.1:5000 in your browser.
+
+---
 
 📫 Contact
 
-Created by @boykodmytro20
+Created by [@boykodmytro20](https://github.com/boykodmytro20/)
